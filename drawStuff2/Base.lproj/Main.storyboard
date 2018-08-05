@@ -17,53 +17,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsR-0m-LLb">
-                                <rect key="frame" x="37" y="183.5" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="NbZ-dF-PeT"/>
-                                    <constraint firstAttribute="width" constant="300" id="h0Q-1t-B4l"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="LCb-15-uEG" appends="YES" id="kuv-CO-rcU"/>
-                                </connections>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDx-pi-6w8">
-                                <rect key="frame" x="137" y="541" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Wsd-0C-ET5"/>
-                                    <constraint firstAttribute="width" constant="50" id="in3-Cu-fNJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="dsR-0m-LLb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1GS-2r-Ujh"/>
-                            <constraint firstItem="dsR-0m-LLb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Do6-7u-BEf"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="LCb-15-uEG" appends="YES" id="N6V-WS-rOJ"/>
+                            <outletCollection property="gestureRecognizers" destination="YXS-oJ-Avh" appends="YES" id="mwQ-xE-v7v"/>
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="tealSquare" destination="JDx-pi-6w8" id="4nc-L0-gOk"/>
-                        <outlet property="yellowSquare" destination="dsR-0m-LLb" id="Uf4-2K-HGV"/>
+                        <outlet property="regularView" destination="8bC-Xf-vdC" id="e8m-tG-nHw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="LCb-15-uEG">
-                    <connections>
-                        <action selector="onTappedYellowSquare:" destination="BYZ-38-t0r" id="eNw-dT-pIz"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="YXS-oJ-Avh"/>
             </objects>
         </scene>
     </scenes>
